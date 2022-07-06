@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Default\Client.vcproj", "{8E8A4C24-43B5-4FB6-882E-2301A9CE80C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DC3969D-A6D4-4471-B693-1CDD85C5C074} = {9DC3969D-A6D4-4471-B693-1CDD85C5C074}
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8} = {749FE3A1-F3DD-4479-9988-3AAA1304F1D8}
+		{D25CF3AE-9B86-4D8A-9936-9B2F27566CB9} = {D25CF3AE-9B86-4D8A-9936-9B2F27566CB9}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Client", "00.Client", "{D1996EEC-4316-46C0-B99C-0E7C26BFE7CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Engine", "01.Engine", "{723E2F24-273B-4D60-A72C-052D65AB8D5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99.SuperClass", "99.SuperClass", "{22B1F13E-DC13-4C53-A424-54CDA09A0EEE}"
+	ProjectSection(SolutionItems) = preProject
+		SuperClass\Base.h = SuperClass\Base.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "System", "Engine\System\Default\System.vcproj", "{749FE3A1-F3DD-4479-9988-3AAA1304F1D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Resource", "Engine\Resource\Default\Resource.vcproj", "{D25CF3AE-9B86-4D8A-9936-9B2F27566CB9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DC3969D-A6D4-4471-B693-1CDD85C5C074} = {9DC3969D-A6D4-4471-B693-1CDD85C5C074}
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8} = {749FE3A1-F3DD-4479-9988-3AAA1304F1D8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility", "Engine\Utility\Default\Utility.vcproj", "{9DC3969D-A6D4-4471-B693-1CDD85C5C074}"
+	ProjectSection(ProjectDependencies) = postProject
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8} = {749FE3A1-F3DD-4479-9988-3AAA1304F1D8}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "98.ThirdParty", "98.ThirdParty", "{C5CCD93D-61B9-407C-97AF-4F250A872AB0}"
+	ProjectSection(SolutionItems) = preProject
+		ThirdParty\Headers\RTTI.h = ThirdParty\Headers\RTTI.h
+		ThirdParty\Headers\SmartPointer.h = ThirdParty\Headers\SmartPointer.h
+		ThirdParty\Headers\TemplateSingleton.h = ThirdParty\Headers\TemplateSingleton.h
+		ThirdParty\Headers\TinyHashTable.h = ThirdParty\Headers\TinyHashTable.h
+		ThirdParty\Headers\vld.h = ThirdParty\Headers\vld.h
+		ThirdParty\Headers\vldapi.h = ThirdParty\Headers\vldapi.h
+		ThirdParty\Headers\XTrace.h = ThirdParty\Headers\XTrace.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FMOD", "FMOD", "{10E54AA5-9DBE-41D8-B6E0-257E408FD603}"
+	ProjectSection(SolutionItems) = preProject
+		ThirdParty\Headers\fmod.h = ThirdParty\Headers\fmod.h
+		ThirdParty\Headers\fmod.hpp = ThirdParty\Headers\fmod.hpp
+		ThirdParty\Headers\fmod_codec.h = ThirdParty\Headers\fmod_codec.h
+		ThirdParty\Headers\fmod_dsp.h = ThirdParty\Headers\fmod_dsp.h
+		ThirdParty\Headers\fmod_errors.h = ThirdParty\Headers\fmod_errors.h
+		ThirdParty\Headers\fmod_memoryinfo.h = ThirdParty\Headers\fmod_memoryinfo.h
+		ThirdParty\Headers\fmod_output.h = ThirdParty\Headers\fmod_output.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "97.EngineHeaders", "97.EngineHeaders", "{F7D7516E-93F5-4FDF-83E2-6FA10E2F1CC7}"
+	ProjectSection(SolutionItems) = preProject
+		Engine\Headers\Engine_Define.h = Engine\Headers\Engine_Define.h
+		Engine\Headers\Engine_Function.h = Engine\Headers\Engine_Function.h
+		Engine\Headers\Engine_Functor.h = Engine\Headers\Engine_Functor.h
+		Engine\Headers\Engine_Include.h = Engine\Headers\Engine_Include.h
+		Engine\Headers\Engine_Macro.h = Engine\Headers\Engine_Macro.h
+		Engine\Headers\Engine_Math.h = Engine\Headers\Engine_Math.h
+		Engine\Headers\Engine_Math_Function.inl = Engine\Headers\Engine_Math_Function.inl
+		Engine\Headers\Engine_Math_Macro.inl = Engine\Headers\Engine_Math_Macro.inl
+		Engine\Headers\Engine_Math_Method.inl = Engine\Headers\Engine_Math_Method.inl
+		Engine\Headers\Engine_Struct.h = Engine\Headers\Engine_Struct.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "96.Shader", "96.Shader", "{B499013F-B560-4E76-9E99-67FA7A878BC8}"
+	ProjectSection(SolutionItems) = preProject
+		Client\Resources\Shader\AlphaShader.fx = Client\Resources\Shader\AlphaShader.fx
+		Client\Resources\Shader\ApplyShadow.fx = Client\Resources\Shader\ApplyShadow.fx
+		Client\Resources\Shader\ColorShader.fx = Client\Resources\Shader\ColorShader.fx
+		Client\Resources\Shader\CreateShadow.fx = Client\Resources\Shader\CreateShadow.fx
+		Client\Resources\Shader\DiffuseColorShader.fx = Client\Resources\Shader\DiffuseColorShader.fx
+		Client\Resources\Shader\FadeOutShader.fx = Client\Resources\Shader\FadeOutShader.fx
+		Client\Resources\Shader\Grayscale.fx = Client\Resources\Shader\Grayscale.fx
+		Client\Resources\Shader\MetalShader.fx = Client\Resources\Shader\MetalShader.fx
+		Client\Resources\Shader\OceanShader.fx = Client\Resources\Shader\OceanShader.fx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E8A4C24-43B5-4FB6-882E-2301A9CE80C5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8E8A4C24-43B5-4FB6-882E-2301A9CE80C5}.Debug|Win32.Build.0 = Debug|Win32
+		{8E8A4C24-43B5-4FB6-882E-2301A9CE80C5}.Release|Win32.ActiveCfg = Release|Win32
+		{8E8A4C24-43B5-4FB6-882E-2301A9CE80C5}.Release|Win32.Build.0 = Release|Win32
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8}.Debug|Win32.Build.0 = Debug|Win32
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8}.Release|Win32.ActiveCfg = Release|Win32
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8}.Release|Win32.Build.0 = Release|Win32
+		{D25CF3AE-9B86-4D8A-9936-9B2F27566CB9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D25CF3AE-9B86-4D8A-9936-9B2F27566CB9}.Debug|Win32.Build.0 = Debug|Win32
+		{D25CF3AE-9B86-4D8A-9936-9B2F27566CB9}.Release|Win32.ActiveCfg = Release|Win32
+		{D25CF3AE-9B86-4D8A-9936-9B2F27566CB9}.Release|Win32.Build.0 = Release|Win32
+		{9DC3969D-A6D4-4471-B693-1CDD85C5C074}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9DC3969D-A6D4-4471-B693-1CDD85C5C074}.Debug|Win32.Build.0 = Debug|Win32
+		{9DC3969D-A6D4-4471-B693-1CDD85C5C074}.Release|Win32.ActiveCfg = Release|Win32
+		{9DC3969D-A6D4-4471-B693-1CDD85C5C074}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E8A4C24-43B5-4FB6-882E-2301A9CE80C5} = {D1996EEC-4316-46C0-B99C-0E7C26BFE7CE}
+		{749FE3A1-F3DD-4479-9988-3AAA1304F1D8} = {723E2F24-273B-4D60-A72C-052D65AB8D5D}
+		{D25CF3AE-9B86-4D8A-9936-9B2F27566CB9} = {723E2F24-273B-4D60-A72C-052D65AB8D5D}
+		{9DC3969D-A6D4-4471-B693-1CDD85C5C074} = {723E2F24-273B-4D60-A72C-052D65AB8D5D}
+		{10E54AA5-9DBE-41D8-B6E0-257E408FD603} = {C5CCD93D-61B9-407C-97AF-4F250A872AB0}
+	EndGlobalSection
+EndGlobal
